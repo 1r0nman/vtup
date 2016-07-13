@@ -46,7 +46,7 @@ def vscan(f):
 
 
 if __name__ == "__main__":
-    v = virustotal.VirusTotal('e78dfc5da052ec9f818111ac84f4ab6eec37ebcefd215ff9314ffb592329b48e')
+    v = virustotal.VirusTotal('YOUR_API_GOES_HERE')
     lock = threading.Lock()
     files = [f for f in os.listdir('.') if os.path.isfile(f)]
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
